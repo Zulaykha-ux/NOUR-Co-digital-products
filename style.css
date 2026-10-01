@@ -123,6 +123,7 @@ html, body {
 
 .home-div p {
     font-size: var(--p-font-size);
+    margin-top: 20px;
 }
 
 
@@ -511,6 +512,7 @@ form button:hover {
         padding-top: 280px;
     }
 
+    
     .about-div .about-h1 {
         font-size: 3rem;
     }
@@ -665,7 +667,9 @@ form button:hover {
     }
 
     .home-section {
-        padding-top: 150px;
+        min-height: 85vh;
+        height: auto;
+        padding-top: 100px;
     }
 
     .form-icons-div .icons {
@@ -804,11 +808,7 @@ form button:hover {
 
 
 
-@media (max-width: 425px) {
-    .home-section {
-        height: 100vh;
-    }
-}
+
 
 
 
