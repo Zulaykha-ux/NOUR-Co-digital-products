@@ -352,76 +352,19 @@ html, body {
     color: inherit;
 }
 
-.contact-section {
+.form-section {
     padding-top: 40px;
     padding-bottom: 30px;
     background-color: #0d2818;
 }
 
-.contact-text-div {
-    padding-left: 30px;
-}
-
-.contact-text-div h3 {
-    font-size: 2rem;
-    font-weight: 500;
-    color: #f5f9e5;
-    padding-bottom: 15px;
-}
-
-.contact-text-div p {
-    font-size: var(--p-font-size);
-    color: var(--text-color-two);
-    padding-bottom: 40px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.form-icons-div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-    align-items: start;
-}
-
-.form-icons-div .icons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 4.5rem;
-    padding-left: 30px;
-}
-
-.form-icons-div .icons i {
-    color: #b6b6b6;
-    font-size: 22px;
-}
-
-.form-icons-div .icons i:hover {
-    background-color: #b6b6b6;
-    color: #0d2818;
-    height: 30px;
-    width: 30px;
-    border-radius: 8px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.form-icons-div .icons a {
-    color: #b6b6b6;
-    font-size: 16px;
-}
-
-.form-icons-div .icons a:hover {
-    color: #f5f9e5;
-}
-
 .form-div {
-    background-color: #475b35;
+    background-image: linear-gradient(to right, #475b35, #0d2818, #475b35);
     border-radius: 8px;
-    margin: 0px auto;
     padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    box-shadow: 0px 3px 10px rgba(245, 249, 229, 0.3);
 }
 
 .form-body-div {
@@ -476,19 +419,60 @@ form button:hover {
     transform: translateY(-3px);
 }
 
+.text-icons-div {
+    padding-top: 50px;
+}
+
+.icons .flex-it i{
+    padding: 20px;
+    color: #0d2818;
+    font-size: 18px;
+}
+
+.icons .flex-it i:hover{
+    color: #000000;
+}
+
+.icons .flex-them {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.flex-it-2, li {
+    padding: 10px;
+}
+
+
+.flex-them a {
+    color: #475b35;
+    font-size: 16px;
+}
+
+.flex-them a:hover {
+    color: #000000;
+}
+
 
 .footer {
     text-align: center;
-    padding: 15px;
     background: #f5f9e5;
 }
 
-.footer p {
-    font-size: 18px;
-    color: #0d2818;
+.footer-div {
+    background-color: #0d2818;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
 
-
+.footer-div p {
+    font-size: 17px;
+    color: #b6b6b6;
+}
 
 
 
@@ -569,12 +553,9 @@ form button:hover {
         font-size: 17px;
     }
 
-    .contact-text-div p {
-        font-size: var(--p-font-size);
-    }
-
-    .form-icons-div .icons a {
-        font-size: 20px;
+    .form-div {
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     .form-icons-div .icons i {
@@ -654,7 +635,7 @@ form button:hover {
         font-size: 15px;
     }
 
-    .footer p {
+    .footer-div p {
         font-size: 16px;
     }
 
@@ -673,17 +654,6 @@ form button:hover {
         padding-top: 100px;
     }
 
-    .form-icons-div .icons {
-        gap: 3rem;
-    } 
-
-    .form-icons-div .icons i {
-        font-size: 20px;
-    }
-
-    .form-icons-div .icons a {
-        font-size: 14px;
-    }
 
     form label {
         font-size: 12px;
@@ -704,7 +674,7 @@ form button:hover {
 
     .header {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .header .bx-menu {
@@ -760,7 +730,7 @@ form button:hover {
         font-size: 13px;
     }
 
-    .footer p {
+    .footer-div p {
         font-size: 16px;
     }
 }
@@ -802,7 +772,7 @@ form button:hover {
         margin: 0 30px;
     }
     
-    .footer p {
+    .footer-div p {
         font-size: 14px;
     }
 }
